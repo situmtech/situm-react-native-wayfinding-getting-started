@@ -9,12 +9,16 @@
 
 ### [Setup](#setup)
 
-1. [Step 1: Install dependencies](#step-1-install-dependencies)
-2. [Step 2: Configure the project](#step-2-configure-the-project)
-3. [Step 3: Setup the credentials](#step-3-setup-the-credentials)
+0. [Step 0: install React Native](#step-0-install-react-native)
+1. [Step 1: install dependencies](#step-1-install-dependencies)
+2. [Step 2: configure the project](#step-2-configure-the-project)
+3. [Step 3: setup the credentials](#step-3-setup-the-credentials)
 
 ### [Samples](#samples)
 
+### [Run Android version](#run-android-version)
+
+### [Run iOS version](#run-ios-version)
   
 
 # Introduction
@@ -35,6 +39,9 @@ With the samples app you will be able to:
 
 # Setup
 
+## Step 0: install React Native
+
+This getting started needs React Native in order to properly work. If you don't have React Native and don't know how to set it up please refer to the **React Native CLI Quickstart** [documentation](https://reactnative.dev/docs/environment-setup). Getting Started uses React Native ```version 0.69.3``` or higher.
   
 
 ## Step 1: install dependencies
@@ -61,7 +68,7 @@ This will download the correct pods to run the application in IOS.
 
 ## Step 2: configure the project
 
-This step is already completed in the Getting Started. 
+**This step is already completed in the Getting Started. Don't forget to change the value with your own API key from Google.** 
 
 ### Android
 You will need to add to the `manifest.xml` the following code:
@@ -80,8 +87,6 @@ You will need to add to the `manifest.xml` the following code:
   </application>
 </manifest>
 ```
-
-Don't forget to change the value with your own API key from Google.
 
 ### IOS
 Permissions are requested to use the Wayfinding. Add the following permissions in the `config.plis`.
@@ -102,12 +107,16 @@ We have created some samples that show different use cases of this plugin.
 
 1. [SimpleMapView](src/app/screens/SimpleMapScreen/index.tsx): use the wayfinding in the selected building. You can init the position, select POIs and calculate directions.
 
-## Run Android Version
+## Run Android version
 
 -   **Run from command line:**  `$ react-native run-android`
 -   **Run from Android Studio:**  Open  `root/android`  folder in Android Studio and run project.
 
-## Run iOS Version
+## Run iOS version
 
 -   **Run from command line:**  `$ react-native run-ios`
 -   **Run from XCode:**  Go to  `root/ios`  folder and open  `SitumRNGettingStarted.xcworkspace`  or run command  `xed ios`  from root directory.
+
+## Support information
+
+For any question or bug report, please send an email to <support@situm.es>.
