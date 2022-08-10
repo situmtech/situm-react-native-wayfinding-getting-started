@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "situmreactnativewayfindinggettingstarted.app"
-               BlueprintName = "situmreactnativewayfindinggettingstarted"
-               ReferencedContainer = "container:situmreactnativewayfindinggettingstarted.xcodeproj">
+               BuildableName = "situm-react-native-wayfinding-getting-started.app"
+               BlueprintName = "situm-react-native-wayfinding-getting-started"
+               ReferencedContainer = "container:situm-react-native-wayfinding-getting-started.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "situmreactnativewayfindinggettingstartedTests.xctest"
-               BlueprintName = "situmreactnativewayfindinggettingstartedTests"
-               ReferencedContainer = "container:situmreactnativewayfindinggettingstarted.xcodeproj">
+               BuildableName = "situm-react-native-wayfinding-getting-startedTests.xctest"
+               BlueprintName = "situm-react-native-wayfinding-getting-startedTests"
+               ReferencedContainer = "container:situm-react-native-wayfinding-getting-started.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "situmreactnativewayfindinggettingstarted.app"
-            BlueprintName = "situmreactnativewayfindinggettingstarted"
-            ReferencedContainer = "container:situmreactnativewayfindinggettingstarted.xcodeproj">
+            BuildableName = "situm-react-native-wayfinding-getting-started.app"
+            BlueprintName = "situm-react-native-wayfinding-getting-started"
+            ReferencedContainer = "container:situm-react-native-wayfinding-getting-started.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "situmreactnativewayfindinggettingstarted.app"
-            BlueprintName = "situmreactnativewayfindinggettingstarted"
-            ReferencedContainer = "container:situmreactnativewayfindinggettingstarted.xcodeproj">
+            BuildableName = "situm-react-native-wayfinding-getting-started.app"
+            BlueprintName = "situm-react-native-wayfinding-getting-started"
+            ReferencedContainer = "container:situm-react-native-wayfinding-getting-started.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
