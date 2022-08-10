@@ -5,20 +5,15 @@
 
   
 
-### [Introduction](#introduction)
+1. [Introduction](#introduction)
 
-### [Setup](#setup)
+2. [Setup](#setup)
 
-0. [Step 0: install React Native](#step-0-install-react-native)
-1. [Step 1: install dependencies](#step-1-install-dependencies)
-2. [Step 2: configure the project](#step-2-configure-the-project)
-3. [Step 3: setup the credentials](#step-3-setup-the-credentials)
+3. [Samples](#samples)
 
-### [Samples](#samples)
+4. [Run Android version](#run-android-version)
 
-### [Run Android version](#run-android-version)
-
-### [Run iOS version](#run-ios-version)
+5. [Run iOS version](#run-ios-version)
   
 
 # Introduction
@@ -109,12 +104,12 @@ We have created some samples that show different use cases of this plugin.
 
 ## Run Android version
 
--   **Run from command line:**  `$ react-native run-android`
--   **Run from Android Studio:**  Open  `root/android`  folder in Android Studio and run project.
+-   **Run from command line:**  `$ npx react-native run-android`. If it doesn't open you a Metro terminal, just execute `$ npx react-native start` previously to the other command.
+-   **Run from Android Studio:**  Open  `root/android`  folder in Android Studio and run project. It is possible that you will have to execute `$ npx react-native start` to start the metro terminal. If you are using a physical device, use `$ adb reverse tcp:8081 tcp:8081` to configure the ports correctly so that metro is connected to that device.
 
 ## Run iOS version
 
--   **Run from command line:**  `$ react-native run-ios`
+-   **Run from command line:**  `$ npx react-native run-ios`. Again, if it doesn't open you a Metro terminal, just execute `$ npx react-native start` previously to the other command.
 -   **Run from XCode:**  Go to  `root/ios`  folder and open  `SitumRNGettingStarted.xcworkspace`  or run command  `xed ios`  from root directory.
 
 ## Support information

@@ -1,4 +1,4 @@
-package com.situmreactnativewayfindinggettingstarted;
+package com.situm.rn.wyf.gettingstarted;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

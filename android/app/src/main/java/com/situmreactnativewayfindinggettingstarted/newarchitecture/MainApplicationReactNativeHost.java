@@ -1,4 +1,4 @@
-package com.situmreactnativewayfindinggettingstarted.newarchitecture;
+package com.situm.rn.wyf.gettingstarted.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -19,9 +19,9 @@ import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.fabric.ReactNativeConfig;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.situmreactnativewayfindinggettingstarted.BuildConfig;
-import com.situmreactnativewayfindinggettingstarted.newarchitecture.components.MainComponentsRegistry;
-import com.situmreactnativewayfindinggettingstarted.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.situm.rn.wyf.gettingstarted.BuildConfig;
+import com.situm.rn.wyf.gettingstarted.newarchitecture.components.MainComponentsRegistry;
+import com.situm.rn.wyf.gettingstarted.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.situmreactnativewayfindinggettingstarted.newarchitecture.components;
+package com.situm.rn.wyf.gettingstarted.newarchitecture.components;
 
 import com.facebook.jni.HybridData;
 import com.facebook.proguard.annotations.DoNotStrip;

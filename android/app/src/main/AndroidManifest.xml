@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.situmreactnativewayfindinggettingstarted">
+  package="com.situm.rn.wyf.gettingstarted">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
