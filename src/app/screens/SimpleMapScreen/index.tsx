@@ -67,9 +67,11 @@ export const SimpleMapScreen = (props: { componentId: string; }) => {
         Navigation.mergeOptions(props.componentId, NavigationMap.SimpleMapScreen.options);
     }, [props.componentId]);
 
-    setTimeout(() => {
-        enableBackButton();
-    }, timeout);
+    if (Platform.OS === 'android') {
+        setTimeout(() => {
+            enableBackButton();
+        }, timeout);
+    }
 
     return (
         <View style={{ flex: 1 }}>
