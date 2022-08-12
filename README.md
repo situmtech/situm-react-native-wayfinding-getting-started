@@ -30,7 +30,19 @@ With the samples app you will be able to:
 
 2. Set listeners to receive notifications about user locations, buildings, POIs and routes.
 
-  
+# Requirements
+
+## Set up the Situm Account
+
+Before running this application you must set up an account in the [Situm Dashboard](https://dashboard.situm.com), configure a building and retrieve an API Key.
+
+1. Go to the [sign in form](https://dashboard.situm.com) and enter your username and password to sign in.
+2. Go to the [account section](https://dashboard.situm.com/accounts/profile) and on API Key section clicl on 'Generate new API Key'.
+3. Go to the [buildings section](https://dashboard.situm.com/buildings) and create a building.
+4. Donwload [Situm Mapping Tool](https://play.google.com/store/apps/details?id=es.situm.maps&hl=es&gl=US) in Play Store (only Android devices) and calibrate your building. Check the user guide for detail1ed information.
+5. Check this [guide](https://developers.google.com/maps/documentation/android-sdk/get-api-key) to get your own Google api key.
+
+You must keep in mind that you will need the user email, the api key, a Google API key for maps and the building ID.
 
 # Setup
 
@@ -82,6 +94,7 @@ You will need to add to the `manifest.xml` the following code:
   </application>
 </manifest>
 ```
+
 
 ### IOS
 Permissions are requested to use the Wayfinding. Add the following permissions in the `config.plis`.

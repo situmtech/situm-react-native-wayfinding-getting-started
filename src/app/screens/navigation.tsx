@@ -24,7 +24,11 @@ export const NavigationMap: any = {
                 title: {
                     text: 'Simple Map Screen',
                 },
+                visible: false,
             },
+            hardwareBackButton: {
+                popStackOnPress: false,
+            }
         },
     },
 };
