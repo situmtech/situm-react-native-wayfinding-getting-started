@@ -22,13 +22,19 @@
 
 Situm Wayfinding Module has been designed to create indoor location applications in the simplest way. It has been built in the top of the Situm SDK and its functionalities has been widely tested. If you are interested in building applications using the Situm SDK, please refer to [Situm React Native SDK Sample app](https://github.com/situmtech/situm-react-native-getting-started).
 
-  
-
 With the samples app you will be able to:
 
-1. Load a Situm Map with a selected building of your account and start the positioning using the MapView object.
+1. Load a Situm Map with with the buildings of your account and start the positioning using the MapView object.
+
+2. Load a Situm Map with a selected building and start the positioning using the MapView object.
 
 2. Set listeners to receive notifications about user locations, buildings, POIs and routes.
+
+When you first run this app you will see a list with the different screens that the Getting Started has, touch one of the options to go to that screen. Once you are in the Wayfinding you will be able to select a building (if the options to enable one building only is enabled), locate yourself and navegate to the differents (P)oints (O)f (I)nterest.
+
+| Home Screen | Selected Screen |
+|-------------|-----------------|
+|![Home Screen](images/HomeScreen.png)             |![Simple Map Screen](images/SimpleMapScreen.png)                 |
 
 # Requirements
 
@@ -72,6 +78,14 @@ Go to the `/ios` folder and run the following code:
 $ pod install
 ```
 This will download the correct pods to run the application in IOS.
+
+The Situm React Native Wayfinding Getting Started depends on the Situm Wayfinding for Android visual component. This has already been done for you in the application, but keep in mind for new projects the Situm repository must be added to the `build.gradle` file to resolve the dependency:
+```
+allprojects {
+    repositories {
+        maven { url "https://repo.situm.com/artifactory/libs-release-local" }
+        ...
+```
 
 ## Step 2: configure the project
 
