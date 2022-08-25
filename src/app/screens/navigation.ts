@@ -26,9 +26,6 @@ export const NavigationMap: any = {
                 },
                 visible: false,
             },
-            hardwareBackButton: {
-                popStackOnPress: false,
-            }
         },
     },
 };

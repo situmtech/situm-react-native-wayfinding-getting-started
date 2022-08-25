@@ -10,15 +10,6 @@ import { SITUM_USER, SITUM_API_KEY, GOOGLE_API_KEY, BUILDING_ID } from '../../co
 
 export const SimpleMapScreen = (props: { componentId: string; }) => {
 
-    const timeout = 2000;
-
-    const enableBackButton = () => {
-        console.log('Enabling back button');
-        NavigationMap.SimpleMapScreen.options.hardwareBackButton.popStackOnPress = true;
-        Navigation.mergeOptions(props.componentId, NavigationMap.SimpleMapScreen.options);
-        NavigationMap.SimpleMapScreen.options.hardwareBackButton.popStackOnPress = false;
-    };
-
     const onPressBack = () => {
         Navigation.setRoot({
             root: {
@@ -66,12 +57,6 @@ export const SimpleMapScreen = (props: { componentId: string; }) => {
     useEffect(() => {
         Navigation.mergeOptions(props.componentId, NavigationMap.SimpleMapScreen.options);
     }, [props.componentId]);
-
-    if (Platform.OS === 'android') {
-        setTimeout(() => {
-            enableBackButton();
-        }, timeout);
-    }
 
     return (
         <View style={styles.screencontainer}>
