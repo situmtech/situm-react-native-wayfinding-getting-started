@@ -3,10 +3,13 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
+    screencontainer: {
+        flex: 1,
+    },
     button: {
         flex: 0,
     },
-    containermap: {
+    mapcontainer: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',

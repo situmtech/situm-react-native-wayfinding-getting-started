@@ -6,7 +6,7 @@ install! 'cocoapods', :deterministic_uuids => false
 
 production = ENV["PRODUCTION"] == "1"
 
-target 'situmreactnativewayfindinggettingstarted' do
+target 'situm-react-native-wayfinding-getting-started' do
   config = use_native_modules!
 
   # Flags change depending on the env values.
@@ -23,7 +23,7 @@ target 'situmreactnativewayfindinggettingstarted' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  target 'situmreactnativewayfindinggettingstartedTests' do
+  target 'situm-react-native-wayfinding-getting-startedTests' do
     inherit! :complete
     # Pods for testing
   end

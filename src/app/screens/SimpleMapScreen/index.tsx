@@ -36,31 +36,31 @@ export const SimpleMapScreen = (props: { componentId: string; }) => {
     }
 
     const onMapReady = (event: any) => {
-        console.log("Map is ready now:" + event);
+        console.log("Map is ready now:" + JSON.stringify(event.nativeEvent));
     };
 
     const onFloorChange = (event: any) => {
-        console.log("on floor change detected: " + event);
+        console.log("on floor change detected: " + JSON.stringify(event.nativeEvent));
     };
 
     const onPoiSelected = (event: any) => {
-        console.log("on poi selected detected: " + event);
+        console.log("on poi selected detected: " + JSON.stringify(event.nativeEvent));
     };
 
     const onPoiDeselected = (event: any) => {
-        console.log("on poi deselected detected: " + event);
+        console.log("on poi deselected detected: " + JSON.stringify(event.nativeEvent));
     };
 
     const onNavigationRequested = (event: any) => {
-        console.log("on navigation requested detected: " + event);
+        console.log("on navigation requested detected: " + JSON.stringify(event.nativeEvent));
     };
 
     const onNavigationError = (event: any) => {
-        console.log("on navigation error detected: " + event);
+        console.log("on navigation error detected: " + JSON.stringify(event.nativeEvent));
     };
 
     const onNavigationFinished = (event: any) => {
-        console.log("on navigation finished detected: " + event);
+        console.log("on navigation finished detected: " + JSON.stringify(event.nativeEvent));
     };
 
     useEffect(() => {
@@ -74,8 +74,8 @@ export const SimpleMapScreen = (props: { componentId: string; }) => {
     }
 
     return (
-        <View style={{ flex: 1 }}>
-            <View style={styles.containermap}>
+        <View style={styles.screencontainer}>
+            <View style={styles.mapcontainer}>
                 <MapView style={styles.mapview}
                     user={SITUM_USER}
                     apikey={SITUM_API_KEY}

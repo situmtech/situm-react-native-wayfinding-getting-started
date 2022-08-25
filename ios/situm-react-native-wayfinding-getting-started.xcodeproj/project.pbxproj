@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* situmreactnativewayfindinggettingstartedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* situmreactnativewayfindinggettingstartedTests.m */; };
-		0C80B921A6F3F58F76C31292 /* libPods-situmreactnativewayfindinggettingstarted.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-situmreactnativewayfindinggettingstarted.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7699B88040F8A987B510C191 /* libPods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests.a */; };
+		7B382653B40F86BC7C366696 /* libPods-situm-react-native-wayfinding-getting-started.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52A8F35D31861DBCDB5A170B /* libPods-situm-react-native-wayfinding-getting-started.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		B1B16D9A427DCEE6A4EB98A2 /* libPods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0263326723F3DB37D8CD02D9 /* libPods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,18 +30,22 @@
 		00E356EE1AD99517003FC87E /* situm-react-native-wayfinding-getting-startedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "situm-react-native-wayfinding-getting-startedTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* situmreactnativewayfindinggettingstartedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = situmreactnativewayfindinggettingstartedTests.m; sourceTree = "<group>"; };
+		0263326723F3DB37D8CD02D9 /* libPods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* situm-react-native-wayfinding-getting-started.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "situm-react-native-wayfinding-getting-started.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = situmreactnativewayfindinggettingstarted/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = situmreactnativewayfindinggettingstarted/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = situmreactnativewayfindinggettingstarted/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = situmreactnativewayfindinggettingstarted/main.m; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		373182402D565EBA9CC576D1 /* Pods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests.debug.xcconfig"; path = "Target Support Files/Pods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests/Pods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-situmreactnativewayfindinggettingstarted.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-situmreactnativewayfindinggettingstarted.debug.xcconfig"; path = "Target Support Files/Pods-situmreactnativewayfindinggettingstarted/Pods-situmreactnativewayfindinggettingstarted.debug.xcconfig"; sourceTree = "<group>"; };
+		52A8F35D31861DBCDB5A170B /* libPods-situm-react-native-wayfinding-getting-started.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-situm-react-native-wayfinding-getting-started.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5709B34CF0A7D63546082F79 /* Pods-situmreactnativewayfindinggettingstarted.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-situmreactnativewayfindinggettingstarted.release.xcconfig"; path = "Target Support Files/Pods-situmreactnativewayfindinggettingstarted/Pods-situmreactnativewayfindinggettingstarted.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests.debug.xcconfig"; path = "Target Support Files/Pods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests/Pods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-situmreactnativewayfindinggettingstarted.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-situmreactnativewayfindinggettingstarted.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67F8C747EBF588C5104E2D13 /* Pods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests.release.xcconfig"; path = "Target Support Files/Pods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests/Pods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests.release.xcconfig"; sourceTree = "<group>"; };
+		690643E735B399193BEF5812 /* Pods-situm-react-native-wayfinding-getting-started.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-situm-react-native-wayfinding-getting-started.release.xcconfig"; path = "Target Support Files/Pods-situm-react-native-wayfinding-getting-started/Pods-situm-react-native-wayfinding-getting-started.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = situmreactnativewayfindinggettingstarted/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests.release.xcconfig"; path = "Target Support Files/Pods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests/Pods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests.release.xcconfig"; sourceTree = "<group>"; };
+		E48DB5C278A671AF66EDA5C6 /* Pods-situm-react-native-wayfinding-getting-started.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-situm-react-native-wayfinding-getting-started.debug.xcconfig"; path = "Target Support Files/Pods-situm-react-native-wayfinding-getting-started/Pods-situm-react-native-wayfinding-getting-started.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -50,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests.a in Frameworks */,
+				B1B16D9A427DCEE6A4EB98A2 /* libPods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-situmreactnativewayfindinggettingstarted.a in Frameworks */,
+				7B382653B40F86BC7C366696 /* libPods-situm-react-native-wayfinding-getting-started.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,8 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-situmreactnativewayfindinggettingstarted.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests.a */,
+				52A8F35D31861DBCDB5A170B /* libPods-situm-react-native-wayfinding-getting-started.a */,
+				0263326723F3DB37D8CD02D9 /* libPods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -142,6 +146,10 @@
 				5709B34CF0A7D63546082F79 /* Pods-situmreactnativewayfindinggettingstarted.release.xcconfig */,
 				5B7EB9410499542E8C5724F5 /* Pods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests.debug.xcconfig */,
 				89C6BE57DB24E9ADA2F236DE /* Pods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests.release.xcconfig */,
+				E48DB5C278A671AF66EDA5C6 /* Pods-situm-react-native-wayfinding-getting-started.debug.xcconfig */,
+				690643E735B399193BEF5812 /* Pods-situm-react-native-wayfinding-getting-started.release.xcconfig */,
+				373182402D565EBA9CC576D1 /* Pods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests.debug.xcconfig */,
+				67F8C747EBF588C5104E2D13 /* Pods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -270,15 +278,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-situmreactnativewayfindinggettingstarted/Pods-situmreactnativewayfindinggettingstarted-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-situm-react-native-wayfinding-getting-started/Pods-situm-react-native-wayfinding-getting-started-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-situmreactnativewayfindinggettingstarted/Pods-situmreactnativewayfindinggettingstarted-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-situm-react-native-wayfinding-getting-started/Pods-situm-react-native-wayfinding-getting-started-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-situmreactnativewayfindinggettingstarted/Pods-situmreactnativewayfindinggettingstarted-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-situm-react-native-wayfinding-getting-started/Pods-situm-react-native-wayfinding-getting-started-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
@@ -296,7 +304,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -318,7 +326,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-situmreactnativewayfindinggettingstarted-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-situm-react-native-wayfinding-getting-started-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -331,15 +339,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests/Pods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests/Pods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests/Pods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests/Pods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests/Pods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests/Pods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
@@ -348,15 +356,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-situmreactnativewayfindinggettingstarted/Pods-situmreactnativewayfindinggettingstarted-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-situm-react-native-wayfinding-getting-started/Pods-situm-react-native-wayfinding-getting-started-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-situmreactnativewayfindinggettingstarted/Pods-situmreactnativewayfindinggettingstarted-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-situm-react-native-wayfinding-getting-started/Pods-situm-react-native-wayfinding-getting-started-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-situmreactnativewayfindinggettingstarted/Pods-situmreactnativewayfindinggettingstarted-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-situm-react-native-wayfinding-getting-started/Pods-situm-react-native-wayfinding-getting-started-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
@@ -365,15 +373,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests/Pods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests/Pods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests/Pods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests/Pods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests/Pods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests/Pods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -428,7 +436,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests.debug.xcconfig */;
+			baseConfigurationReference = 373182402D565EBA9CC576D1 /* Pods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -455,7 +463,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-situmreactnativewayfindinggettingstarted-situmreactnativewayfindinggettingstartedTests.release.xcconfig */;
+			baseConfigurationReference = 67F8C747EBF588C5104E2D13 /* Pods-situm-react-native-wayfinding-getting-started-situm-react-native-wayfinding-getting-startedTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -479,7 +487,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-situmreactnativewayfindinggettingstarted.debug.xcconfig */;
+			baseConfigurationReference = E48DB5C278A671AF66EDA5C6 /* Pods-situm-react-native-wayfinding-getting-started.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -506,7 +514,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-situmreactnativewayfindinggettingstarted.release.xcconfig */;
+			baseConfigurationReference = 690643E735B399193BEF5812 /* Pods-situm-react-native-wayfinding-getting-started.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
