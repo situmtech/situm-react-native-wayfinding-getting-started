@@ -48,7 +48,7 @@ Before running this application you must set up an account in the [Situm Dashboa
 4. Download [Situm Mapping Tool](https://play.google.com/store/apps/details?id=es.situm.maps&hl=es&gl=US) in Play Store (only Android devices) and calibrate your building. Check the user guide for detail1ed information.
 5. Check this [guide](https://developers.google.com/maps/documentation/android-sdk/get-api-key) to get your own Google api key.
 
-You must keep in mind that you will need the user email, the api key, a Google API key for maps and the building ID.
+You must keep in mind that you will need the user email, the api key, a Google API key for maps and the building ID. If you don't know the building ID, go to the dashboard and select a building, then you will have the building ID in the link of that webpage.
 
 # Setup
 
