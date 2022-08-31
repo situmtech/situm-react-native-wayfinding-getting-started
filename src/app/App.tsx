@@ -17,10 +17,6 @@ import { MapView } from '@situm/react-native-wayfinding';
 import styles from './styles';
 import { SITUM_USER, SITUM_API_KEY, BUILDING_ID, GOOGLE_API_KEY } from './config';
 
-const FOOTER: string = 'footer';
-const HEADER: string = 'header';
-const FLOATING: string = 'floating';
-
 const App = () => {
 
     const onMapReady = (event: any) => {
@@ -51,19 +47,13 @@ const App = () => {
         console.log("on navigation finished detected: " + JSON.stringify(event.nativeEvent));
     };
 
-    const showAlert = (msg: string) => {
-        if (msg === FLOATING) {
-            Alert.alert('Floating', 'This is a floating window over a native component');
-        } else if (msg === FOOTER) {
-            Alert.alert('Footer', 'This is a footer');
-        } else {
-            Alert.alert('Header', 'This is a header');
-        }
-    }
+    const showAlert = (title: string, msg: string) => {
+        Alert.alert(title, msg);
+    };
 
     return (
         <View style={styles.container}>
-            <TouchableOpacity style={styles.header} onPress={() => showAlert(HEADER)}>
+            <TouchableOpacity style={styles.header} onPress={() => showAlert('Header', 'This is a header')}>
                 <Text>Header</Text>
             </TouchableOpacity>
             <View style={styles.mapview_container}>
@@ -80,15 +70,15 @@ const App = () => {
                     onNavigationError={onNavigationError}
                     onNavigationfinished={onNavigationFinished}
                 />
-                <TouchableOpacity style={styles.floating_view} onPress={() => showAlert(FLOATING)}>
+                <TouchableOpacity style={styles.floating_view} onPress={() => showAlert('Floating window', 'This is a floating window over a map')}>
                     <Text>Floating</Text>
                 </TouchableOpacity>
             </View>
-            <TouchableOpacity style={styles.footer} onPress={() => showAlert(FOOTER)}>
+            <TouchableOpacity style={styles.footer} onPress={() => showAlert('Footer', 'This is a footer')}>
                 <Text>Footer</Text>
             </TouchableOpacity>
         </View>
     );
-}
+};
 
 export default App;
