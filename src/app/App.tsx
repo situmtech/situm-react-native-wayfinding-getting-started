@@ -1,30 +1,27 @@
 /* eslint-disable prettier/prettier */
 
-import React, { useEffect } from 'react';
-import { View, Button, Platform } from 'react-native';
-import { NavigationMap } from '../navigation';
-import { Navigation } from 'react-native-navigation';
-import styles from './styles';
+
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ *
+ * Generated with the TypeScript template
+ * https://github.com/react-native-community/react-native-template-typescript
+ *
+ * @format
+ */
+
+import React from 'react';
+import { View, Text, Alert, TouchableOpacity } from 'react-native';
 import { MapView } from '@situm/react-native-wayfinding';
-import { SITUM_USER, SITUM_API_KEY, GOOGLE_API_KEY, BUILDING_ID } from '../../config';
+import styles from './styles';
+import { SITUM_USER, SITUM_API_KEY, BUILDING_ID, GOOGLE_API_KEY } from './config';
 
-export const SimpleMapScreen = (props: { componentId: string; }) => {
+const FOOTER: string = 'footer';
+const HEADER: string = 'header';
+const FLOATING: string = 'floating';
 
-    const onPressBack = () => {
-        Navigation.setRoot({
-            root: {
-                stack: {
-                    children: [
-                        {
-                            component: {
-                                name: NavigationMap.Home.name,
-                            },
-                        },
-                    ],
-                },
-            },
-        });
-    }
+const App = () => {
 
     const onMapReady = (event: any) => {
         console.log("Map is ready now:" + JSON.stringify(event.nativeEvent));
@@ -54,13 +51,22 @@ export const SimpleMapScreen = (props: { componentId: string; }) => {
         console.log("on navigation finished detected: " + JSON.stringify(event.nativeEvent));
     };
 
-    useEffect(() => {
-        Navigation.mergeOptions(props.componentId, NavigationMap.SimpleMapScreen.options);
-    }, [props.componentId]);
+    const showAlert = (msg: string) => {
+        if (msg === FLOATING) {
+            Alert.alert('Floating', 'This is a floating window over a native component');
+        } else if (msg === FOOTER) {
+            Alert.alert('Footer', 'This is a footer');
+        } else {
+            Alert.alert('Header', 'This is a header');
+        }
+    }
 
     return (
-        <View style={styles.screencontainer}>
-            <View style={styles.mapcontainer}>
+        <View style={styles.container}>
+            <TouchableOpacity style={styles.header} onPress={() => showAlert(HEADER)}>
+                <Text>Header</Text>
+            </TouchableOpacity>
+            <View style={styles.mapview_container}>
                 <MapView style={styles.mapview}
                     user={SITUM_USER}
                     apikey={SITUM_API_KEY}
@@ -74,13 +80,15 @@ export const SimpleMapScreen = (props: { componentId: string; }) => {
                     onNavigationError={onNavigationError}
                     onNavigationfinished={onNavigationFinished}
                 />
+                <TouchableOpacity style={styles.floating_view} onPress={() => showAlert(FLOATING)}>
+                    <Text>Floating</Text>
+                </TouchableOpacity>
             </View>
-            {Platform.OS === 'ios' && (
-                <View style={styles.button}>
-                    <Button title="Back" onPress={onPressBack} />
-                </View>
-            )}
-
+            <TouchableOpacity style={styles.footer} onPress={() => showAlert(FOOTER)}>
+                <Text>Footer</Text>
+            </TouchableOpacity>
         </View>
     );
-};
+}
+
+export default App;

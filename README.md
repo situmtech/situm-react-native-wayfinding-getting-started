@@ -9,11 +9,9 @@
 
 2. [Setup](#setup)
 
-3. [Samples](#samples)
+3. [Run Android version](#run-android-version)
 
-4. [Run Android version](#run-android-version)
-
-5. [Run iOS version](#run-ios-version)
+4. [Run iOS version](#run-ios-version)
   
 
 # Introduction
@@ -30,11 +28,11 @@ With the samples app you will be able to:
 
 2. Set listeners to receive notifications about user locations, buildings, POIs and routes.
 
-When you first run this app you will see a list with the different screens that the Getting Started has, touch one of the options to go to that screen. Once you are in the Wayfinding you will be able to select a building (if the options to enable one building only is enabled), locate yourself and navegate to the differents (P)oints (O)f (I)nterest.
+When you run the app you will see diferent components. You will have a component for the header, the footer and a floating window. Also, in the middle will appear the native component with the Situm WYF.
 
-| Home Screen | Selected Screen |
+| Android | iOS |
 |-------------|-----------------|
-|![Home Screen](images/HomeScreen.png)             |![Simple Map Screen](images/SimpleMapScreen.png)                 |
+|![Android](images/Android.png)             |![iOS](images/iOS.png)                 |
 
 # Requirements
 
@@ -54,7 +52,7 @@ You must keep in mind that you will need the user email, the api key, a Google A
 
 ## Step 0: install React Native
 
-This getting started needs React Native in order to properly work. If you don't have React Native and don't know how to set it up please refer to the **React Native CLI Quickstart** [documentation](https://reactnative.dev/docs/environment-setup). Getting Started uses React Native ```version 0.69.3``` or higher.
+This getting started needs React Native in order to properly work. If you don't have React Native and don't know how to set it up please refer to the **React Native CLI Quickstart** [documentation](https://reactnative.dev/docs/environment-setup). Getting Started uses React Native ```version 0.69.5``` or higher.
   
 
 ## Step 1: install dependencies
@@ -123,11 +121,6 @@ export  const  SITUM_API_KEY = 'SITUM_API_KEY_HERE';
 export  const  BUILDING_ID = 'SITUM_BUILDING_ID_HERE';
 export  const  GOOGLE_API_KEY = 'GOOGLE_API_KEY_HERE';
 ```
-## Samples
-
-We have created some samples that show different use cases of this plugin.
-
-1. [SimpleMapView](src/app/screens/SimpleMapScreen/index.tsx): use the wayfinding in the selected building. You can init the position, select POIs and calculate directions.
 
 ## Run Android version
 
@@ -137,7 +130,7 @@ We have created some samples that show different use cases of this plugin.
 ## Run iOS version
 
 -   **Run from command line:**  `$ npx react-native run-ios`. Again, if it doesn't open you a Metro terminal, just execute `$ npx react-native start` previously to the other command.
--   **Run from XCode:**  Go to  `root/ios`  folder and open  `SitumRNGettingStarted.xcworkspace`  or run command  `xed ios`  from root directory.
+-   **Run from XCode:**  Go to  `root/ios`  folder and open  `.xcworkspace`  or run command  `xed ios`  from root directory.
 
 ## Support information
 
