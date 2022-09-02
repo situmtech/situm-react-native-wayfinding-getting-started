@@ -1,5 +1,19 @@
+<p align="center"> <img width="233" src="https://situm.com/wp-content/themes/situm/img/logo-situm.svg" style="margin-bottom:1rem" /> <h1 align="center">Situm React Native Wayfinding Getting Started</h1> </p>
 
-# Situm React Native Wayfinding Getting
+<p align="center" style="text-align:center">
+
+A module for React Native using the [SITUM](https://www.situm.com/) Wayfinding to show a building and positioning inside.
+
+</p>
+
+<div align="center" style="text-align:center">
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+![Version:](https://img.shields.io/badge/react--native-v0.69.5-orange)
+![Node compatibility:](https://img.shields.io/node/v/@situm/sdk-js)
+[![TypeScript](https://badges.frapsoft.com/typescript/code/typescript.svg?v=101)](https://github.com/ellerbrock/typescript-badges/)
+
+</div>
 
 ## Table of contents
 
@@ -18,35 +32,33 @@
 
   
 
-Situm Wayfinding Module has been designed to create indoor location applications in the simplest way. It has been built in the top of the Situm SDK and its functionalities has been widely tested. If you are interested in building applications using the Situm SDK, please refer to [Situm React Native SDK Sample app](https://github.com/situmtech/situm-react-native-getting-started).
+Situm Wayfinding Module has been designed to create indoor location applications in the simplest way. It has been built in the top of the Situm SDK. If you are interested in building applications using the Situm SDK, please refer to [Situm React Native SDK Sample app](https://github.com/situmtech/situm-react-native-getting-started).
 
 With the samples app you will be able to:
 
-1. Load a Situm Map with with the buildings of your account and start the positioning using the MapView object.
-
-2. Load a Situm Map with a selected building and start the positioning using the MapView object.
+1. Load a Situm Map with a selected building and start the positioning using the MapView object.
 
 2. Set listeners to receive notifications about user locations, buildings, POIs and routes.
 
-When you run the app you will see diferent components. You will have a component for the header, the footer and a floating window. Also, in the middle will appear the native component with the Situm WYF.
+When you run the app you will see diferent components. You will have a component for the header, the footer and a floating window. Also, it will appear the native component with the Situm WYF in the middle.
 
-| Android | iOS |
-|-------------|-----------------|
-|![Android](images/Android.png)             |![iOS](images/iOS.png)                 |
+| Layout | Alert | Navigation |
+|-------------|-----------------|-----------------|
+|![Android](images/Android.png)             |![Alert](images/Alert.png)                 | ![Navigation](images/Route.png) |
 
 # Requirements
 
 ## Set up the Situm Account
 
-Before running this application you must set up an account in the [Situm Dashboard](https://dashboard.situm.com), configure a building and retrieve an API Key.
+Before running this application you must set up an account in the [Situm Dashboard](https://dashboard.situm.com), configure a building and retrieve an Situm API Key.
 
 1. Go to the [sign in form](https://dashboard.situm.com) and enter your username and password to sign in.
-2. Once you enter your account, go to the [account section](https://dashboard.situm.com/accounts/profile) and on API Key section clicl on 'Generate new API Key'.
+2. Once you enter your account, go to the [account section](https://dashboard.situm.com/accounts/profile) and on API Key section click on 'Generate new API Key'.
 3. Go to the [buildings section](https://dashboard.situm.com/buildings) and create a building.
-4. Download [Situm Mapping Tool](https://play.google.com/store/apps/details?id=es.situm.maps&hl=es&gl=US) in Play Store (only Android devices) and calibrate your building. Check the user guide for detail1ed information.
-5. Check this [guide](https://developers.google.com/maps/documentation/android-sdk/get-api-key) to get your own Google api key.
+4. Download [Situm Mapping Tool](https://play.google.com/store/apps/details?id=es.situm.maps&hl=es&gl=US) in Play Store (only Android devices) and calibrate your building. Check the user guide for detailed information.
+5. Check this [guide](https://developers.google.com/maps/documentation/android-sdk/get-api-key) to get your own Google API Key.
 
-You must keep in mind that you will need the user email, the api key, a Google API key for maps and the building ID. If you don't know the building ID, go to the dashboard and select a building, then you will have the building ID in the link of that webpage.
+You must keep in mind that you will need the user email, the Situm API Key, a Google API Key for maps and the building ID. If you don't know the building ID, go to the dashboard and select a building, then you will have the building ID in the link of that webpage.
 
 # Setup
 
