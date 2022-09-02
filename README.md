@@ -144,6 +144,14 @@ export  const  GOOGLE_API_KEY = 'GOOGLE_API_KEY_HERE';
 -   **Run from command line:**  `$ npx react-native run-ios`. Again, if it doesn't open you a Metro terminal, just execute `$ npx react-native start` previously to the other command.
 -   **Run from XCode:**  Go to  `root/ios`  folder and open  `.xcworkspace`  or run command  `xed ios`  from root directory.
 
+## Submitting Contributions
+
+You will need to sign a Contributor License Agreement (CLA) before making a submission. [Learn more here.](https://situm.com/contributions/)
+
+## License
+
+This project is licensed under the MIT - see the [LICENSE](LICENSE) file for details.
+
 ## Support information
 
 For any question or bug report, please send an email to <support@situm.es>.
