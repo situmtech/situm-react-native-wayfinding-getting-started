@@ -11,6 +11,7 @@ A module for React Native using the [SITUM](https://www.situm.com/) Wayfinding t
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 ![Version:](https://img.shields.io/badge/react--native-v0.69.5-orange)
 ![Node compatibility:](https://img.shields.io/node/v/@situm/sdk-js)
+![Npm version](https://img.shields.io/badge/npm%40lastest-6.14.13-yellow)
 [![TypeScript](https://badges.frapsoft.com/typescript/code/typescript.svg?v=101)](https://github.com/ellerbrock/typescript-badges/)
 
 </div>
@@ -26,6 +27,14 @@ A module for React Native using the [SITUM](https://www.situm.com/) Wayfinding t
 3. [Run Android version](#run-android-version)
 
 4. [Run iOS version](#run-ios-version)
+
+5. [Submitting Contributions](#submitting-contributions)
+
+6. [License](#license)
+
+7. [More information](#more-information)
+
+8. [Support information](#support-information)
   
 
 # Introduction
@@ -34,13 +43,13 @@ A module for React Native using the [SITUM](https://www.situm.com/) Wayfinding t
 
 Situm Wayfinding Module has been designed to create indoor location applications in the simplest way. It has been built in the top of the Situm SDK. If you are interested in building applications using the Situm SDK, please refer to [Situm React Native SDK Sample app](https://github.com/situmtech/situm-react-native-getting-started).
 
-With the samples app you will be able to:
+With the sample app you will be able to:
 
 1. Load a Situm Map with a selected building and start the positioning using the MapView object.
 
 2. Set listeners to receive notifications about user locations, buildings, POIs and routes.
 
-When you run the app you will see diferent components. You will have a component for the header, the footer and a floating window. Also, it will appear the native component with the Situm WYF in the middle.
+When you run the app you will see different components: the header, the footer, the floating window and the component with the Situm WYF module in the middle.
 
 | Layout | Alert | Navigation |
 |-------------|-----------------|-----------------|
@@ -64,7 +73,7 @@ You must keep in mind that you will need the user email, the Situm API Key, a Go
 
 ## Step 0: install React Native
 
-This getting started needs React Native in order to properly work. If you don't have React Native and don't know how to set it up please refer to the **React Native CLI Quickstart** [documentation](https://reactnative.dev/docs/environment-setup). Getting Started uses React Native ```version 0.69.5``` or higher.
+This getting started needs React Native in order to properly work. To set up React Native please refer to the **React Native CLI Quickstart** [documentation](https://reactnative.dev/docs/environment-setup). Getting Started uses React Native ```version 0.69.5``` or higher.
   
 
 ## Step 1: install dependencies
@@ -83,11 +92,13 @@ $ npm install
 
 This will download all the requested dependencies in the package.json.
 
+### iOS only
+
 Go to the `/ios` folder and run the following code:
 ```
 $ pod install
 ```
-This will download the correct pods to run the application in IOS.
+This will download the correct pods to run the application in iOS.
 
 The Situm React Native Wayfinding Getting Started depends on the Situm Wayfinding for Android visual component. This has already been done for you in the application, but keep in mind for new projects the Situm repository must be added to the `build.gradle` file to resolve the dependency:
 ```
@@ -97,9 +108,7 @@ allprojects {
         ...
 ```
 
-## Step 2: configure the project
-
-**This step is already completed in the Getting Started. Don't forget to change the value with your own API key from Google.** 
+## Step 2: configure the project (Already completed)
 
 ### Android
 You will need to add to the `manifest.xml` the following code:
@@ -120,7 +129,7 @@ You will need to add to the `manifest.xml` the following code:
 ```
 
 
-### IOS
+### iOS
 Permissions are requested to use the Wayfinding. Add the following permissions in the `config.plis`.
 - NSLocationAlwaysAndWhenInUsageDescription.
 - NSBluetoothAlwaysUsageDescription.
@@ -133,6 +142,8 @@ export  const  SITUM_API_KEY = 'SITUM_API_KEY_HERE';
 export  const  BUILDING_ID = 'SITUM_BUILDING_ID_HERE';
 export  const  GOOGLE_API_KEY = 'GOOGLE_API_KEY_HERE';
 ```
+
+You will need to change the Google API Key in the `manifest.xml` as well.
 
 ## Run Android version
 
@@ -151,6 +162,10 @@ You will need to sign a Contributor License Agreement (CLA) before making a subm
 ## License
 
 This project is licensed under the MIT - see the [LICENSE](LICENSE) file for details.
+
+## More information
+
+More info is available at our [Developers Page](http://developers.situm.es).
 
 ## Support information
 
