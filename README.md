@@ -2,7 +2,7 @@
 
 <p align="center" style="text-align:center">
 
-A module for React Native using the [SITUM](https://www.situm.com/) Wayfinding to show a building and positioning inside.
+A module for React Native using the [Situm](https://www.situm.com/) Wayfinding to show a building and positioning indoors.
 
 </p>
 
@@ -45,7 +45,7 @@ Situm Wayfinding Module has been designed to create indoor location applications
 
 With the sample app you will be able to:
 
-1. Load a Situm Map with a selected building and start the positioning using the MapView object.
+1. Load a Google Map with a selected Situm building and start the positioning using the MapView object.
 
 2. Set listeners to receive notifications about user locations, buildings, POIs and routes.
 
@@ -59,15 +59,14 @@ When you run the app you will see different components: the header, the footer, 
 
 ## Set up the Situm Account
 
-Before running this application you must set up an account in the [Situm Dashboard](https://dashboard.situm.com), configure a building and retrieve an Situm API Key.
+Before running this application you must set up an account in the [Situm Dashboard](https://dashboard.situm.com), configure a building and retrieve a Situm API Key.
 
 1. Go to the [sign in form](https://dashboard.situm.com) and enter your username and password to sign in.
-2. Once you enter your account, go to the [account section](https://dashboard.situm.com/accounts/profile) and on API Key section click on 'Generate new API Key'.
+2. Once you log in, go to the [account configuration](https://dashboard.situm.com/accounts/profile) and on the API Key section click on 'Generate new API Key'.
 3. Go to the [buildings section](https://dashboard.situm.com/buildings) and create a building.
-4. Download [Situm Mapping Tool](https://play.google.com/store/apps/details?id=es.situm.maps&hl=es&gl=US) in Play Store (only Android devices) and calibrate your building. Check the user guide for detailed information.
+4. Download [Situm Mapping Tool](https://play.google.com/store/apps/details?id=es.situm.maps&hl=es&gl=US) in Play Store (only Android devices) and calibrate your building. Check the [user guide](https://situm.com/docs/03-calibration/) for detailed information.
 5. Check this [guide](https://developers.google.com/maps/documentation/android-sdk/get-api-key) to get your own Google API Key.
-
-You must keep in mind that you will need the user email, the Situm API Key, a Google API Key for maps and the building ID. If you don't know the building ID, go to the dashboard and select a building, then you will have the building ID in the link of that webpage.
+6. Retrieve the ID of your selected building. You will find it in the link of the Situm Dashboard.
 
 # Setup
 
@@ -100,15 +99,8 @@ $ pod install
 ```
 This will download the correct pods to run the application in iOS.
 
-The Situm React Native Wayfinding Getting Started depends on the Situm Wayfinding for Android visual component. This has already been done for you in the application, but keep in mind for new projects the Situm repository must be added to the `build.gradle` file to resolve the dependency:
-```
-allprojects {
-    repositories {
-        maven { url "https://repo.situm.com/artifactory/libs-release-local" }
-        ...
-```
 
-## Step 2: configure the project (Already completed)
+## Step 2: configure the project
 
 ### Android
 You will need to add to the `manifest.xml` the following code:
@@ -128,14 +120,22 @@ You will need to add to the `manifest.xml` the following code:
 </manifest>
 ```
 
+The Situm React Native Wayfinding Getting Started depends on the Situm Wayfinding for Android visual component. Keep in mind that, for new projects, the Situm repository must be added to the `build.gradle` file to resolve the dependency:
+```
+allprojects {
+    repositories {
+        maven { url "https://repo.situm.com/artifactory/libs-release-local" }
+        ...
+```
+
 
 ### iOS
-Permissions are requested to use the Wayfinding. Add the following permissions in the `config.plis`.
+Some permissions are requested to use the Wayfinding. Add the following permissions in the `config.plis`.
 - NSLocationAlwaysAndWhenInUsageDescription.
 - NSBluetoothAlwaysUsageDescription.
 
 ## Step 3: setup the credentials
-In the config.js file under the `./app/src` folder, change the following code with your own credentials of situm.
+In the config.js file under the `./app/src` folder, change the following code with your own Situm credentials.
 ```
 export  const  SITUM_USER = 'SITUM_USER_HERE';
 export  const  SITUM_API_KEY = 'SITUM_API_KEY_HERE';
@@ -143,17 +143,15 @@ export  const  BUILDING_ID = 'SITUM_BUILDING_ID_HERE';
 export  const  GOOGLE_API_KEY = 'GOOGLE_API_KEY_HERE';
 ```
 
-You will need to change the Google API Key in the `manifest.xml` as well.
-
 ## Run Android version
 
--   **Run from command line:**  `$ npx react-native run-android`. If it doesn't open you a Metro terminal, just execute `$ npx react-native start` previously to the other command.
+-   **Run from command line:**  `$ npx react-native run-android`. If it doesn't open a Metro terminal, just execute `$ npx react-native start` before the other command.
 -   **Run from Android Studio:**  Open  `root/android`  folder in Android Studio and run project. It is possible that you will have to execute `$ npx react-native start` to start the metro terminal. If you are using a physical device, use `$ adb reverse tcp:8081 tcp:8081` to configure the ports correctly so that metro is connected to that device.
 
 ## Run iOS version
 
--   **Run from command line:**  `$ npx react-native run-ios`. Again, if it doesn't open you a Metro terminal, just execute `$ npx react-native start` previously to the other command.
--   **Run from XCode:**  Go to  `root/ios`  folder and open  `.xcworkspace`  or run command  `xed ios`  from root directory.
+-   **Run from command line:**  `$ npx react-native run-ios`. Again, if it doesn't open a Metro terminal, just execute `$ npx react-native start` before the other command.
+-   **Run from XCode:**  Go to  `root/ios`  folder and open  `.xcworkspace`, then run the project.
 
 ## Submitting Contributions
 
