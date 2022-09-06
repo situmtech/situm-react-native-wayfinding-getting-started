@@ -79,11 +79,6 @@ This getting started needs React Native in order to properly work. To set up Rea
 
 You need to install the [@situm/react-native-wayfinding](https://www.npmjs.com/package/@situm/react-native-wayfinding). In the root directory you will need to execute the following code:
 
-```
-$ yarn install
-```
-
-or
 
 ```
 $ npm install
