@@ -36,9 +36,9 @@
 		</dict>
 	</dict>
 	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>Bluetooth is neccesary for the WYF to use</string>
+	<string>Bluetooth is required to use Situm WYF</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Location is neccesary for the WYF to use</string>
+	<string>Location is required to use Situm WYF</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
 	<key>UILaunchStoryboardName</key>

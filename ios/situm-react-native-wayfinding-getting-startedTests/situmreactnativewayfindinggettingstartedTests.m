@@ -7,11 +7,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React"
 
-@interface situmreactnativewayfindinggettingstartedTests : XCTestCase
+@interface situm-react-native-wayfinding-getting-startedTests : XCTestCase
 
 @end
 
-@implementation situmreactnativewayfindinggettingstartedTests
+@implementation situm-react-native-wayfinding-getting-startedTests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL (^)(UIView *view))test
 {
