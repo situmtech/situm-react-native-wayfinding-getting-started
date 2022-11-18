@@ -44,10 +44,10 @@ export default function WayfindingScreen() {
         <View style={styles.container}>
           <MapView
             style={styles.mapview}
-            user="SITUM_USER"
-            apikey="SITUM_APIKEY"
-            googleApikey="GOOGLE_MAPS_APIKEY"
-            buildingId="PUT_THE_BUILDING_IDENTIFIER_HERE"
+            user={SITUM_USER}
+            apikey={SITUM_API_KEY}
+            googleApikey={GOOGLE_API_KEY}
+            buildingId={BUILDING_ID}
             onMapReady={onMapReady}
             onFloorChange={onFloorChange}
             onPoiSelected={onPoiSelected}
