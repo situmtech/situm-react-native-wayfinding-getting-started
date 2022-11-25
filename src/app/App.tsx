@@ -18,7 +18,7 @@ import styles from './styles';
 import { SITUM_USER, SITUM_API_KEY, BUILDING_ID, GOOGLE_API_KEY } from './config';
 import { createNativeStackNavigator, NativeStackView } from '@react-navigation/native-stack';
 import { NavigationContainer} from '@react-navigation/native'
-import HomeScreen from './HomeScreen';
+import  HomeScreen from './HomeScreen';
 import WayfindingScreen from './WayfindingScreen';
 
 const App = () => {
@@ -29,7 +29,9 @@ const App = () => {
         <NavigationContainer>
             <stack.Navigator>
                 <stack.Screen name='Home' component={HomeScreen}/>
-                <stack.Screen name='Wayfinding' component={WayfindingScreen}/>
+                <stack.Screen name="Wayfinding" options={{ headerShown: true }} >
+                    {props => <WayfindingScreen index={1} />} 
+                </stack.Screen>
             </stack.Navigator>
         </NavigationContainer>
     )

@@ -1,61 +1,103 @@
-import { useNavigation } from '@react-navigation/native';
-import React, {useState} from 'react';
-import { View, Text, Alert, TouchableOpacity } from 'react-native';
+import React, {Component, useState} from 'react';
+import { View, Text, Button, Alert, TouchableOpacity } from 'react-native';
 import { MapView } from '@situm/react-native-wayfinding';
 import styles from './styles';
 import { SITUM_USER, SITUM_API_KEY, BUILDING_ID, GOOGLE_API_KEY } from './config';
 
-export default function WayfindingScreen() {
-    const navigation = useNavigation();
+interface IWayfindingScreenProps {
+    index: Number,
+}
 
-    const onMapReady = (event: any) => {
+interface IWayfindingScreenState {
+    isMapLoaded : boolean,
+}
+
+class WayfindingScreen extends Component<IWayfindingScreenProps, IWayfindingScreenState> {
+    
+    constructor(props: IWayfindingScreenProps) {
+        super(props);
+        
+        this.state = {
+            isMapLoaded: false,
+        };
+
+        this.loadMap = this.loadMap.bind(this);        
+        this.onMapReady = this.onMapReady.bind(this);
+        this.onFloorChange = this.onFloorChange.bind(this);
+        this.onPoiDeselected = this.onPoiSelected.bind(this);
+        this.onPoiDeselected = this.onPoiDeselected.bind(this);
+        this.onNavigationRequested = this.onNavigationRequested.bind(this);
+        this.onNavigationError = this.onNavigationError.bind(this);
+        this.onNavigationFinished = this.onNavigationFinished.bind(this);
+    }
+
+    loadMap() {
+        this.setState((previousState, props) => ({
+            isMapLoaded: !previousState.isMapLoaded,
+          }));
+    }
+
+    onMapReady = (event: any) => {
         console.log("Map is ready now:" + JSON.stringify(event.nativeEvent));
     };
 
-    const onFloorChange = (event: any) => {
+    onFloorChange = (event: any) => {
         console.log("on floor change detected: " + JSON.stringify(event.nativeEvent));
     };
 
-    const onPoiSelected = (event: any) => {
+    onPoiSelected = (event: any) => {
         console.log("on poi selected detected: " + JSON.stringify(event.nativeEvent));
     };
 
-    const onPoiDeselected = (event: any) => {
+    onPoiDeselected = (event: any) => {
         console.log("on poi deselected detected: " + JSON.stringify(event.nativeEvent));
     };
 
-    const onNavigationRequested = (event: any) => {
+    onNavigationRequested = (event: any) => {
         console.log("on navigation requested detected: " + JSON.stringify(event.nativeEvent));
     };
 
-    const onNavigationError = (event: any) => {
+    onNavigationError = (event: any) => {
         console.log("on navigation error detected: " + JSON.stringify(event.nativeEvent));
     };
 
-    const onNavigationFinished = (event: any) => {
+    onNavigationFinished = (event: any) => {
         console.log("on navigation finished detected: " + JSON.stringify(event.nativeEvent));
     };
 
-    const showAlert = (title: string, msg: string) => {
-        Alert.alert(title, msg);
-    };
+    componentDidMount(): void {        
+        setTimeout(
+            () => this.loadMap(), 
+            500
+          );
+    }
 
-    return (
-        <View style={styles.container}>
-          <MapView
-            style={styles.mapview}
-            user="SITUM_USER"
-            apikey="SITUM_APIKEY"
-            googleApikey="GOOGLE_MAPS_APIKEY"
-            buildingId="PUT_THE_BUILDING_IDENTIFIER_HERE"
-            onMapReady={onMapReady}
-            onFloorChange={onFloorChange}
-            onPoiSelected={onPoiSelected}
-            onPoiDeselected={onPoiDeselected}
-            onNavigationRequested={onNavigationRequested}
-            onNavigationError={onNavigationError}
-            onNavigationFinished={onNavigationFinished}
-          />
-        </View>
-      );
-}
+    render() {  
+        {{ console.log("trying to load map on index: " + this.props.index ) }}
+        if (!this.state.isMapLoaded) {
+            return <Text>Wait until map is fully loaded</Text>
+        } else {
+            return (
+                <View style={styles.container}>
+                    <MapView
+                        style={styles.mapview}
+                        user="SITUM_USER"
+                        apikey="SITUM_APIKEY"
+                        googleApikey="GOOGLE_MAPS_APIKEY"
+                        buildingId="PUT_THE_BUILDING_IDENTIFIER_HERE"
+                        onMapReady={this.onMapReady}
+                        onFloorChange={this.onFloorChange}
+                        onPoiSelected={this.onPoiSelected}
+                        onPoiDeselected={this.onPoiDeselected}
+                        onNavigationRequested={this.onNavigationRequested}
+                        onNavigationError={this.onNavigationError}
+                        onNavigationFinished={this.onNavigationFinished}
+                        iOSMapViewIndex={this.props.index.toString()}
+
+                    />
+                </View>
+            );
+        }
+    }
+};
+export default WayfindingScreen;
