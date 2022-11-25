@@ -1370,10 +1370,10 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@situm/react-native-wayfinding@^0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@situm/react-native-wayfinding/-/react-native-wayfinding-0.1.3.tgz#728728e11be1d54e0df241b8c617aff3de77a565"
-  integrity sha512-rxSza+9URX5wFrp2Ph5LY6e91KdY/cIqUtJkYDOLeVDDAX9Q4+iQqdsJleFEbp2MW2rsiaPrUUOs5btzr5yPVg==
+"@situm/react-native-wayfinding@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@situm/react-native-wayfinding/-/react-native-wayfinding-0.1.4.tgz#63953a991b251e77dd3207fa7e5dabcead6c79e3"
+  integrity sha512-7zkg6PAqQolfTLF8rUXUukGnq9P2MooTWG/HmIFYDQTU7ldeED3/Uy32s8yvlpb+zg7+qg518SsCw10XoA+5xQ==
   dependencies:
     prop-types "^15.8.1"
 

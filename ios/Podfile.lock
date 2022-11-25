@@ -315,7 +315,7 @@ PODS:
     - RCTTypeSafety
     - React-Core
     - ReactCommon/turbomodule/core
-  - react-native-wayfinding (0.1.3):
+  - react-native-wayfinding (0.1.4):
     - React-Core
     - SitumWayfinding (~> 0.16.1)
   - React-perflogger (0.69.5)
@@ -594,7 +594,7 @@ SPEC CHECKSUMS:
   React-jsinspector: e385fb7a1440ae3f3b2cd1a139ca5aadaab43c10
   React-logger: 15c734997c06fe9c9b88e528fb7757601e7a56df
   react-native-safe-area-context: 99b24a0c5acd0d5dcac2b1a7f18c49ea317be99a
-  react-native-wayfinding: 3e33f5f13a2e86f778a3a44897bb15bf273686c8
+  react-native-wayfinding: 91d22f851994069dcad3e8892afa82e1d4a5d0b0
   React-perflogger: 367418425c5e4a9f0f80385ee1eaacd2a7348f8e
   React-RCTActionSheet: e4885e7136f98ded1137cd3daccc05eaed97d5a6
   React-RCTAnimation: 7c5a74f301c9b763343ba98a3dd776ed2676993f
