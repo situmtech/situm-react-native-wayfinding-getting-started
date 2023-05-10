@@ -69,7 +69,6 @@ jobs:
 
     - template: azure/build-examples.yaml
       parameters:
-        DASHBOARD_URL: $(DASHBOARD_URL)
         system: $(ubuntuVersion)
         BUILDINGID: $(BUILDINGID)
         XAPIEMAIL: $(XAPIEMAIL)
