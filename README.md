@@ -16,10 +16,14 @@ A module for React Native using the [Situm](https://www.situm.com/) Wayfinding t
 
 </div>
 
+> [!IMPORTANT]  
+> This guide refers to the old version of the Wayfinding module, which is **no longer maintained**. We strongly recommend adopting [MapView](https://developers.situm.com/sdk_documentation/react-native/typedoc/functions/mapview), the new visual component available at [@situm/react-native](https://github.com/situmtech/react-native).
+To stay up to date, checkout the [React Native SDK Changelog](https://situm.com/docs/react-native-sdk-changelog/) and the [example app](https://github.com/situmtech/react-native/tree/master/example) at the public repository.
+Visit the [migration guide](https://situm.com/docs/react-native-wayfinding-migration-guide/) to ease the transition to the new library. 
+
 ## Table of contents
 
   
-
 1. [Introduction](#introduction)
 
 2. [Setup](#setup)
